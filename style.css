@@ -444,25 +444,36 @@ html {
   scroll-behavior: smooth;
 }
 
-/* scroll to top */
+/* Scroll to Top Button */
 #scroll-to-top {
   display: none;
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #3498db;
-  color: #fff;
+  background-color: black;
+  color: white;
   padding: 10px 15px;
   border-radius: 50%;
   font-size: 20px;
   text-decoration: none;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease;
+  opacity: 0.8;
+  z-index: 9999;
 }
 
 #scroll-to-top:hover {
   background-color: #2980b9;
+  opacity: 1;
+  transform: scale(1.1);
 }
+
+#scroll-to-top svg {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
 
 /* parallax effect */
 .parallax-bg {
